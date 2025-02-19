@@ -1,0 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000103;
+  color: #ffffff;
+}
+
+main {
+  width: 1000px;
+  margin: auto;
+  border: 1px solid red;
+}
