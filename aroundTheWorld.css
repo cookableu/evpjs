@@ -1,0 +1,792 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #fff;
+  margin: 0;
+}
+
+svg:hover {
+  cursor: pointer;
+}
+
+header {
+  margin-bottom: 100px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#intro {
+  height: 900px;
+  background-image: url(static/aron.jpg);
+  background-size: cover;
+  color: white;
+}
+
+#intro-details {
+  margin: auto;
+  width: 1035px;
+  padding: 60px 10px 10px 10px;
+}
+
+#shell1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+#logoHolder {
+  width: 60%;
+}
+
+#telephone {
+  display: flex;
+  column-gap: 8px;
+}
+
+#location {
+  display: flex;
+  column-gap: 8px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+}
+
+#HItext-header {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+}
+
+#HItext-sub {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 500;
+  color: grey;
+}
+
+#telephone:hover,
+#telephone:hover #HItext-sub,
+#telephone:hover #phone,
+#location:hover,
+#location:hover #HItext-sub,
+#location:hover #target,
+#home:hover #HItext-sub,
+#corporate:hover #HItext-sub,
+#offer:hover #HItext-sub,
+#patnas:hover #HItext-sub,
+#quote:hover #HItext-sub,
+#news:hover #HItext-sub,
+#contactUS:hover #HItext-sub {
+  color: #fff;
+  fill: #fff;
+  cursor: pointer;
+}
+
+header p {
+  margin: 0;
+}
+
+.line {
+  height: 0.5px;
+  width: 100%;
+  background-color: grey;
+  margin: 20px 0;
+}
+#lineII {
+  height: 5px;
+  width: 101px;
+  background-color: deepskyblue;
+  position: relative;
+  bottom: 22.5px;
+}
+
+.dividers {
+  background-color: grey;
+  width: 0.5px;
+  height: 15px;
+  margin-top: 7px;
+}
+
+#intro-text {
+  margin: 100px auto 10px auto;
+  width: 1035px;
+  text-align: center;
+  align-items: center;
+}
+#it1 {
+  margin: 0;
+  font-weight: 300;
+}
+#it2 {
+  margin: 0 0 30px 0;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+#intro-text button {
+  font-size: 12px;
+  font-weight: 600;
+  color: #2a3af2;
+  background-color: white;
+  text-decoration: none;
+  padding: 12px 45px;
+  border: none;
+  border-radius: 20px;
+  transition-duration: 0.3s;
+}
+
+#intro-text button:hover {
+  color: white;
+  background-color: #2a3af2;
+  cursor: pointer;
+}
+
+#quoteSpace {
+  width: 250px;
+  height: 200px;
+  margin: 50px auto;
+  text-align: center;
+  align-items: center;
+  padding: 0 10px 20px 10px;
+}
+
+#quoteContainer {
+  display: none;
+  border-radius: 20px;
+  height: 200px;
+}
+
+#slideQuote {
+  padding: 20px;
+  border-radius: 20px;
+  display: none;
+  height: 43%;
+}
+
+#speaker {
+  display: none;
+  margin-top: -30px;
+  margin-bottom: 15px;
+}
+
+#opcFigure {
+  width: 915px;
+  margin: -130px auto auto auto;
+  padding: 40px 0;
+}
+
+#opcHolder {
+  width: 915px;
+  border-radius: 6px;
+  background-color: #fff;
+  display: flex;
+  margin: 10px auto;
+  box-shadow: 0px 12px 22px #0000003a;
+}
+
+.optionColumns {
+  padding: 30px 40px 40px 40px;
+  width: 183px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  background-color: #ffffff;
+}
+.optionColumns:hover {
+  cursor: pointer;
+}
+
+#opc1 {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+#opc5 {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+#cargoPLANE {
+  margin-top: -5px;
+}
+
+#cargoTRUCK {
+  margin-top: -3px;
+}
+
+#cargoSHIP {
+  margin-top: 3px;
+}
+
+#cargoBOXES {
+  margin-top: 1px;
+}
+
+.freight {
+  margin: 0;
+  color: mediumblue;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+#freightI {
+  margin-top: -2px;
+}
+
+#freightIII {
+  margin-top: 6px;
+}
+
+#freightV {
+  margin-top: 8px;
+}
+
+.freightSUB {
+  margin: 0;
+  color: grey;
+  font-size: 10px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+#FS-I {
+  width: 73px;
+}
+
+.opc-arrow {
+  display: none;
+}
+
+.dividers2-0 {
+  background-color: grey;
+  width: 0.5px;
+  height: 40px;
+  position: relative;
+  top: 56px;
+}
+
+#values {
+  width: 935px;
+  margin: 40px auto 100px auto;
+  text-align: center;
+  align-items: center;
+}
+
+#statement {
+  background-color: gainsboro;
+  height: 3px;
+  width: 529px;
+  margin: -13px auto auto auto;
+}
+
+#statement-header {
+  width: 935px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#statement-header h1 {
+  color: mediumblue;
+  font-size: 2.1em;
+}
+
+#values-holder {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  margin: auto;
+}
+
+#values-holder h4 {
+  margin: 0;
+}
+
+#IDK,
+#EnL,
+#CP {
+  margin: 30px 0;
+}
+
+#rounds-holder {
+  display: flex;
+  justify-content: space-between;
+  width: 529px;
+  margin: auto;
+}
+
+.rounds {
+  height: 24px;
+  width: 24px;
+  border-radius: 100%;
+  background-color: gainsboro;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#rounds-connector {
+  background-color: gainsboro;
+  height: 3px;
+  width: 529px;
+  margin: -13px auto auto auto;
+}
+
+#blue-slider {
+  background-color: dodgerblue;
+  height: 3px;
+  width: 0px;
+  margin: -3px auto auto auto;
+  position: relative;
+  right: 11.5px;
+}
+
+#blue-sliderII {
+  background-color: dodgerblue;
+  height: 3px;
+  width: 0px;
+  margin: -3px auto auto auto;
+  position: relative;
+  left: 11.5px;
+}
+
+.middle {
+  background-color: white;
+  box-shadow: 0px 12px 22px #0000004f;
+}
+
+.round-svgs {
+  height: 12px;
+  width: 12px;
+}
+
+.round-svgs-text {
+  width: 100px;
+  color: silver;
+}
+
+#EnL {
+  color: dodgerblue;
+}
+
+#statement-main {
+  display: flex;
+  justify-content: space-between;
+  width: 1035px;
+  margin: 10px auto;
+  column-gap: 80px;
+}
+
+#statement-main figure {
+  padding-top: 60px;
+}
+
+#statement-main figcaption {
+  color: grey;
+  padding: 70px;
+}
+
+#statement-picI {
+  border-radius: 10px;
+  box-shadow: -10px -5px 30px 0px #0000005f;
+  background-image: url(static/jason-goodman-Oalh2MojUuk-unsplash.jpg);
+  background-size: cover;
+  height: 200px;
+  width: 300px;
+}
+
+#statement-picII {
+  border-radius: 10px;
+  position: absolute;
+  top: 1386px;
+  margin-left: 45px;
+  height: 230px;
+  width: 330px;
+  box-shadow: 10px -10px 30px 0px #0000005f;
+  background-image: url(static/lucas-van-oort-fBZOVyF-96w-unsplash.jpg);
+  background-size: cover;
+}
+
+#statement-picIII {
+  border-radius: 10px;
+  box-shadow: 10px 4px 24px 0px rgb(121, 178, 236);
+  position: absolute;
+  top: 1440px;
+  margin-left: 75px;
+  height: 240px;
+  width: 340px;
+  background-image: url(static/kenny-eliason-1-aA2Fadydc-unsplash.jpg);
+  background-size: cover;
+}
+
+.un {
+  font-size: 14px;
+}
+
+.deux {
+  font-size: 18px;
+}
+
+#about {
+  background-color: whitesmoke;
+  padding: 50px;
+}
+
+#about-holder {
+  width: 1035px;
+  display: flex;
+  margin: auto;
+}
+
+#about-sub1 {
+  width: 40%;
+  padding: 40px;
+}
+
+#about-sub1 h2 {
+  color: mediumblue;
+  width: 209px;
+}
+
+.p1 {
+  font-size: 13px;
+  width: 350px;
+  margin-bottom: 26px;
+}
+
+.p2 {
+  margin: 0;
+  font-size: 14px;
+}
+
+#abs1h5 {
+  color: mediumblue;
+  margin: 0;
+  font-weight: bold;
+}
+
+.about-display {
+  width: 30%;
+  margin-top: 64px;
+}
+
+.disp1 {
+  height: 100px;
+  width: 250px;
+  background-image: url(static/osg-containers-uyDNkvdIKv8-unsplash.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.disp2 {
+  height: 100px;
+  width: 250px;
+  background-image: url(static/bernd-dittrich-T_wUlbOM8ck-unsplash.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.about-sub-heads {
+  color: mediumblue;
+  margin: 12px 0px;
+}
+
+.ash1 {
+  width: 100px;
+  font-weight: bold;
+}
+
+.ash2 {
+  width: 150px;
+  font-weight: bold;
+}
+
+.about-sub-texts {
+  font-size: 13px;
+  margin: 0;
+  width: 240px;
+  margin-bottom: 10px;
+}
+
+.as-arrow {
+  height: 35px;
+  width: 35px;
+  fill: dodgerblue;
+}
+
+.as-arrow:hover {
+  fill: black;
+}
+
+#services {
+  background-color: #04234d;
+  padding: 100px;
+}
+
+#services-holder {
+  width: 960px;
+  color: white;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+#services-holder-text {
+  display: flex;
+  column-gap: 106px;
+}
+
+#shth3 {
+  width: 150px;
+  margin: 0;
+  height: 180px;
+  font-weight: bold;
+}
+
+#sht-svg {
+  display: flex;
+  align-items: end;
+}
+
+#sht-svg div {
+  background-color: dodgerblue;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+}
+
+#sht-svg svg {
+  margin-top: -5px;
+  margin-left: -5px;
+}
+
+.services-outline {
+  border: 3.5px solid steelblue;
+  height: 130px;
+  width: 240px;
+  padding: 20px;
+}
+
+.so {
+  background-color: #04234d;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.sosvg1 {
+  margin-top: -45px;
+  margin-bottom: 20px;
+}
+.sosvg1 svg {
+  margin-top: -3px;
+}
+
+.sosvg2 {
+  margin-top: -45px;
+  margin-bottom: 25px;
+}
+.sosvg2 svg {
+  margin-top: 3px;
+}
+
+.sosvg3 {
+  margin-top: -50px;
+  margin-bottom: 20px;
+}
+.sosvg3 svg {
+  margin-top: -5px;
+}
+
+.sosvg4 {
+  margin-top: -40px;
+  margin-bottom: 20px;
+}
+
+.sosvg5 {
+  margin-top: -40px;
+  margin-bottom: 20px;
+}
+.sosvg5 svg {
+  margin-top: 1px;
+}
+
+.services-outline svg {
+  background-color: #04234d;
+  display: flex;
+  justify-content: center;
+}
+
+.services-outline h6 {
+  margin: 0;
+}
+
+.services-outline p {
+  font-size: 11.5px;
+  font-weight: 400;
+  color: darkgray;
+}
+
+.services-outline:hover {
+  border: 3.5px solid white;
+  cursor: pointer;
+}
+
+.services-outline:hover p {
+  color: white;
+}
+
+#achievements-holder {
+  display: flex;
+  width: 960px;
+  margin: 10px auto;
+  justify-content: space-between;
+  padding: 60px;
+}
+
+#ah-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  height: 0px;
+  margin-top: 50px;
+}
+
+.stats {
+  display: flex;
+  column-gap: 10px;
+}
+
+.stats-number {
+  font-size: 46px;
+  color: mediumblue;
+  font-weight: 300;
+}
+
+.stats-text {
+  width: 70px;
+  margin-top: 20px;
+  font-size: 12px;
+  color: gray;
+}
+
+#smsvgs-holder {
+  display: flex;
+}
+
+.smsvgs {
+  border: 0.1px solid #052c5c;
+  padding: 5px 13px;
+}
+.smsvgs svg:hover {
+  fill: red;
+}
+
+.smsvgs1 {
+  border-right-width: inherit;
+}
+
+.smsvgs2 {
+  border-right-width: inherit;
+}
+
+.smsvgs svg {
+  height: 16px;
+  width: 16px;
+  fill: #ffffff;
+}
+
+footer {
+  background-color: #020127;
+  color: #ffffff;
+}
+
+#footer-contents-holder {
+  width: 960px;
+  margin: auto;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer-logo {
+  width: 29%;
+  margin-top: 25px;
+}
+
+#footer-logo p {
+  font-size: 12px;
+  width: 210px;
+  margin: 22px 0px;
+}
+
+.footer-list {
+  width: 20.5%;
+}
+
+.footer-list span {
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.footer-list div {
+  font-size: 12px;
+  margin: 6px 0px;
+}
+
+.footer-list a {
+  text-decoration: none;
+  color: white;
+}
+
+#footer-mail-section {
+  width: 30%;
+}
+
+#footer-mail-section div {
+  font-size: 12px;
+  margin: 15px 0;
+}
+
+form {
+  display: flex;
+}
+
+input {
+  padding: 12px;
+  font-size: 12px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  width: 75%;
+  border: none;
+  outline: none;
+}
+
+form button {
+  padding: 0px 20px;
+  border: 1px solid dodgerblue;
+  background-color: dodgerblue;
+  color: white;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  font-size: 16px;
+}
+
+form button:hover {
+  cursor: pointer;
+}
